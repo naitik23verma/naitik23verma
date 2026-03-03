@@ -47,7 +47,9 @@
 <p align="center">
 
   <!-- TOP LANGS -->
-  <img width="48%" src="https://raw.githubusercontent.com/naitik23verma/github-stats/master/generated/languages.svg" />
+  <p align="center">
+  <img width="48%" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=naitik23verma&layout=compact&theme=radical" />
+</p>
 
 </p>
 
