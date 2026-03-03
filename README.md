@@ -16,7 +16,6 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/ashutosh1919/master-assets/master/profile-wave-divider.svg" width="900" />
 </p>
-
 ---
 
 # 💫 About Me:
