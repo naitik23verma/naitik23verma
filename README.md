@@ -1,13 +1,22 @@
 <!-- ========================= ANIMATED HEADER ========================= -->
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=32&pause=800&color=00F0FF&center=true&vCenter=true&width=900&lines=Hey+I'm+Naitik+Verma+👋;Full-Stack+Developer+%7C+AI+Engineer;Next.js+%7C+React+%7C+Node.js+%7C+C%2B%2B+DSA;Welcome+to+my+GitHub+Profile+🔥" />
+  <img 
+    src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=900&size=36&duration=2000&pause=500&color=00F7FF&center=true&vCenter=true&repeat=true&width=900&lines=Hey+I'm+Naitik+Verma+👋;Full-Stack+Developer+%7C+AI+Engineer;Next.js+%7C+React+%7C+Node.js+%7C+ML%2FCV;Welcome+to+My+GitHub+Universe+🔥" 
+    alt="Typing SVG"
+/>
 </h1>
 
-<!-- Glow Separator -->
+<!-- Neon Glow Border -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="600">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="800" />
 </p>
+
+<!-- Animated Glow Dot Line -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/assets/animated-serviceline.gif" width="750" />
+</p>
+>
 
 ---
 
