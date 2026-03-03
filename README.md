@@ -14,9 +14,8 @@
 
 <!-- Animated Glow Dot Line -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/assets/animated-serviceline.gif" width="750" />
+  <img src="https://raw.githubusercontent.com/ashutosh1919/master-assets/master/profile-wave-divider.svg" width="900" />
 </p>
->
 
 ---
 
