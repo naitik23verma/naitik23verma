@@ -41,7 +41,7 @@
   ![](https://nirzak-streak-stats.vercel.app/?user=naitik23verma&theme=dark&hide_border=false)
 
   <!-- STREAK STATS -->
-  <img width="48%" src="https://streak-stats.demolab.com/?user=naitik23verma&theme=radical&hide_border=false" />
+   <img width="48%" src="https://streak-stats.demolab.com/?user=naitik23verma&theme=radical&hide_border=false" />
 
 </p>
 
