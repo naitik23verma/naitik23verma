@@ -50,27 +50,14 @@
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=naitik23verma&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4)
 
----
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
-### ✍️ Random Dev Quote:
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" />
-</p>
-
----
-
-# 🔝 Top Contributed Repo:
-<p align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=naitik23verma&limit=5&theme=nightowl&combine_all_yearly_contributions=true" />
-</p>
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=naitik23verma&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
 
 ---
-
-# 👁 Visitor Count:
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=naitik23verma&style=for-the-badge&color=00E7FF" />
-</p>
----
+[![](https://visitcount.itsvg.in/api?id=naitik23verma&icon=0&color=0)](https://visitcount.itsvg.in)
 
 
 <!-- No Imgur, No errors -->
