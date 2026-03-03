@@ -37,6 +37,7 @@
 <p align="center">
 
   <!-- MAIN STATS -->
+  ![](https://github-readme-stats.vercel.app/api?username=naitik23verma&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
   <img width="48%" src="https://stats.dooboo.io/api/github-stats?login=naitik23verma&theme=radical" />
 
   <!-- STREAK STATS -->
