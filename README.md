@@ -35,24 +35,13 @@
 ---
 # 📊 GitHub Stats:
 
-<p align="center">
+
 
   <!-- MAIN STATS -->
   ![](https://nirzak-streak-stats.vercel.app/?user=naitik23verma&theme=dark&hide_border=false)
 
   <!-- STREAK STATS -->
-   <img width="48%" src="https://stats.dooboo.io/api/github-stats?login=naitik23verma&theme=radical" />
 
-</p>
-
-<p align="center">
-
-  <!-- TOP LANGS -->
-  <p align="center">
-  <img width="48%" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=naitik23verma&layout=compact&theme=radical" />
-</p>
-
-</p>
 
 
 
