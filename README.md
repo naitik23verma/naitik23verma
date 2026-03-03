@@ -12,11 +12,6 @@
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="800" />
 </p>
 
-<!-- Animated Glow Dot Line -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ashutosh1919/master-assets/master/profile-wave-divider.svg" width="900" />
-</p>
----
 
 # 💫 About Me:
 🔭 I’m currently working on<br><br>Building full-stack Next.js + React web applications with modern UI/UX.<br><br>Enhancing my C++ DSA skills with regular LeetCode practice (200+ questions).<br><br>Developing projects in Machine Learning, Computer Vision, and RAG-based AI apps.<br><br>Improving real-time apps using WebSockets, Express, and Node.js.<br><br>🤝 I’m looking to collaborate on<br><br>Full-stack projects using Next.js, React, TypeScript, Node.js, WebSockets.<br><br>AI/ML projects involving Computer Vision, Deep Learning, and RAG pipelines.<br><br>Open-source tools related to backend systems, automation, or developer utilities.<br><br>🧠 I’m looking for help with<br><br>Scaling real-time systems and optimizing backend architecture.<br><br>Improving accuracy and performance in ML/CV models.<br><br>Advancing my understanding of distributed systems.<br><br>🌱 I’m currently learning<br><br>Advanced Machine Learning, Neural Networks, and LLM-based Retrieval systems (RAG).<br><br>Backend performance optimization with Node.js, API caching, and database patterns.<br><br>Competitive programming concepts in C++ (graphs, DP, trees, tries).<br><br>💬 Ask me about<br><br>Next.js, React, JavaScript, WebSockets, REST APIs, CSS/SCSS.<br><br>Python, ML, Computer Vision, OpenCV, TensorFlow/PyTorch basics.<br><br>C++ for DSA, problem-solving strategies, and debugging.<br><br>Building end-to-end full-stack apps, deployment, and optimization.<br><br>⚡ Fun fact<br><br>I love mixing skills — sometimes I build AI with Python, sometimes a full-stack app with Next.js… and sometimes I fix bugs just by staring at my screen. 😄
