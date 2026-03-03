@@ -47,7 +47,7 @@
 <p align="center">
 
   <!-- TOP LANGS -->
-  <img width="48%" src="https://stats.dooboo.io/api/top-langs?login=naitik23verma&theme=radical&layout=compact" />
+  <img width="48%" src="https://raw.githubusercontent.com/naitik23verma/github-stats/master/generated/languages.svg" />
 
 </p>
 
