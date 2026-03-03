@@ -45,10 +45,8 @@
 
 ---
 
-## 🏆 GitHub Trophies:
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=naitik23verma&theme=onestar&no-frame=true&margin-w=10" />
-</p>
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=naitik23verma&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4)
 
 ---
 
@@ -72,10 +70,6 @@
 </p>
 ---
 
-# 👁 Visitor Count:
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=naitik23verma&style=for-the-badge&color=00E7FF" />
-</p>
 
 <!-- No Imgur, No errors -->
 <!-- No Imgur, No errors -->
