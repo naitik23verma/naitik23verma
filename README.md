@@ -33,22 +33,21 @@
 </p>
 
 ---
-
 # 📊 GitHub Stats:
 <p align="center">
-  <img width="48%" src="https://github-readme-stats-one-bice.vercel.app/api?username=naitik23verma&theme=radical&show_icons=true&hide_border=false" />
-  <img width="48%" src="https://streak-stats.demolab.com/?user=naitik23verma&theme=radical&hide_border=false" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=naitik23verma&theme=radical&show_icons=true&hide_border=false&cache_seconds=1800" />
+  <img width="48%" src="https://streak-stats.demolab.com?user=naitik23verma&theme=radical&hide_border=false" />
 </p>
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=naitik23verma&layout=compact&theme=radical" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=naitik23verma&layout=compact&theme=radical&cache_seconds=1800" />
 </p>
 
 ---
 
 ## 🏆 GitHub Trophies:
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=naitik23verma&theme=onestar&no-frame=true&margin-w=10&no-bg=true" />
+  <img src="https://github-profile-trophy.vercel.app/?username=naitik23verma&theme=onestar&no-frame=true&margin-w=10" />
 </p>
 
 ---
@@ -62,9 +61,15 @@
 
 # 🔝 Top Contributed Repo:
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lowlighter/metrics/examples/metrics.base.svg" width="60%" />
+  <img src="https://github-contributor-stats.vercel.app/api?username=naitik23verma&limit=5&theme=nightowl&combine_all_yearly_contributions=true" />
 </p>
 
+---
+
+# 👁 Visitor Count:
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=naitik23verma&style=for-the-badge&color=00E7FF" />
+</p>
 ---
 
 # 👁 Visitor Count:
