@@ -24,10 +24,10 @@ jobs:
 
       - name: Extract Data
         run: |
-          EASY=$(jq '.matchedUserStats.acSubmissionNum[] | select(.difficulty=="Easy") | .count' data.json)
-          MEDIUM=$(jq '.matchedUserStats.acSubmissionNum[] | select(.difficulty=="Medium") | .count' data.json)
-          HARD=$(jq '.matchedUserStats.acSubmissionNum[] | select(.difficulty=="Hard") | .count' data.json)
-          TOTAL=$(jq '.matchedUserStats.acSubmissionNum[] | select(.difficulty=="All") | .count' data.json)
+          EASY=$(jq '.easySolved' data.json)
+          MEDIUM=$(jq '.mediumSolved' data.json)
+          HARD=$(jq '.hardSolved' data.json)
+          TOTAL=$(jq '.totalSolved' data.json)
           RANK=$(jq '.ranking' data.json)
           CONTRI=$(jq '.contributionPoint' data.json)
 
