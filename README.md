@@ -40,12 +40,12 @@
 
 | 📊 Category | 🚀 Stats |
 |------------|--------|
-| 🟢 Easy | 0 |
-| 🟡 Medium | 0 |
-| 🔴 Hard | 0 |
-| 📌 Total | 0 |
-| 🏆 Rank | 0 |
-| 🔥 Contribution | 0 |
+| 🟢 Easy | null |
+| 🟡 Medium | null |
+| 🔴 Hard | null |
+| 📌 Total | null |
+| 🏆 Rank | 415117 |
+| 🔥 Contribution | null |
 
 <!-- LEETCODE-END -->
 
