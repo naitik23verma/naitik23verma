@@ -66,10 +66,10 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=NaitikVerma&show_icons=true&theme=dark&hide_border=true&count_private=true" height="180"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NaitikVerma&layout=compact&theme=dark&hide_border=true" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api?username=naitik23verma&show_icons=true&theme=dark&hide_border=true&count_private=true" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=naitik23verma&layout=compact&theme=dark&hide_border=true" height="180"/>
 <br/><br/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=NaitikVerma&theme=dark&hide_border=true"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=naitik23verma&theme=dark&hide_border=true"/>
 </div>
 
 
