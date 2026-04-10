@@ -44,6 +44,20 @@
 
   <!-- STREAK STATS -->
 
+## <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg" width="25"/> LeetCode Stats
+
+<div align="center">
+
+| 📊 Category         | 🚀 Stats |
+| ------------------- | -------- |
+| 🟢 Easy             | 0        |
+| 🟡 Medium           | 0        |
+| 🔴 Hard             | 0        |
+| 📌 **Total Solved** | 0        |
+| 🏆 Ranking          | 0        |
+| 🔥 Contribution     | 0        |
+
+</div>
 
 
 
