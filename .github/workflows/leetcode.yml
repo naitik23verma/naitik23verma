@@ -24,12 +24,19 @@ jobs:
 
       - name: Extract Data
         run: |
-          echo "EASY=$(jq '.easySolved' data.json)" >> $GITHUB_ENV
-          echo "MEDIUM=$(jq '.mediumSolved' data.json)" >> $GITHUB_ENV
-          echo "HARD=$(jq '.hardSolved' data.json)" >> $GITHUB_ENV
-          echo "TOTAL=$(jq '.totalSolved' data.json)" >> $GITHUB_ENV
-          echo "RANK=$(jq '.ranking' data.json)" >> $GITHUB_ENV
-          echo "CONTRI=$(jq '.contributionPoint' data.json)" >> $GITHUB_ENV
+          EASY=$(jq '.matchedUserStats.acSubmissionNum[] | select(.difficulty=="Easy") | .count' data.json)
+          MEDIUM=$(jq '.matchedUserStats.acSubmissionNum[] | select(.difficulty=="Medium") | .count' data.json)
+          HARD=$(jq '.matchedUserStats.acSubmissionNum[] | select(.difficulty=="Hard") | .count' data.json)
+          TOTAL=$(jq '.matchedUserStats.acSubmissionNum[] | select(.difficulty=="All") | .count' data.json)
+          RANK=$(jq '.ranking' data.json)
+          CONTRI=$(jq '.contributionPoint' data.json)
+
+          echo "EASY=$EASY" >> $GITHUB_ENV
+          echo "MEDIUM=$MEDIUM" >> $GITHUB_ENV
+          echo "HARD=$HARD" >> $GITHUB_ENV
+          echo "TOTAL=$TOTAL" >> $GITHUB_ENV
+          echo "RANK=$RANK" >> $GITHUB_ENV
+          echo "CONTRI=$CONTRI" >> $GITHUB_ENV
 
       - name: Update README
         run: |
