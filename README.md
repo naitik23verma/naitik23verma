@@ -1,16 +1,30 @@
-<!-- ========================= ANIMATED HEADER ========================= -->
+<!-- ===================== HEADER ===================== -->
 
-<h1 align="center">
-  <img 
-    src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=900&size=36&duration=2000&pause=500&color=00F7FF&center=true&vCenter=true&repeat=true&width=900&lines=Hey+I'm+Naitik+Verma+👋;Full-Stack+Developer+%7C+AI+Engineer;Next.js+%7C+React+%7C+Node.js+%7C+ML%2FCV;Welcome+to+My+GitHub+Universe+🔥" 
-    alt="Typing SVG"
-/>
-</h1>
+<div align="center">
 
-<!-- Neon Glow Border -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D0D0D,50:00F7FF,100:0D0D0D&height=120&section=header"/>
+
+</div>
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="800" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=32&duration=2500&pause=600&color=00F7FF&center=true&vCenter=true&multiline=false&repeat=true&width=860&height=60&lines=Hey%2C+I'm+Naitik+Verma+%F0%9F%91%8B;Full-Stack+Dev+%7C+AI+Engineer+%7C+DSA+Enthusiast;Next.js+%E2%80%A2+React+%E2%80%A2+Node.js+%E2%80%A2+ML+%2F+CV;Building+cool+stuff+one+commit+at+a+time+%F0%9F%94%A5" alt="Typing SVG" />
 </p>
+
+<p align="center">
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  &nbsp;
+  <a href="https://leetcode.com/NaitikVerma"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/></a>
+  &nbsp;
+  <a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  &nbsp;
+  <a href="YOUR_PORTFOLIO"><img src="https://img.shields.io/badge/Portfolio-00F7FF?style=for-the-badge&logo=vercel&logoColor=black"/></a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=NaitikVerma&style=for-the-badge&color=00f7ff&label=PROFILE+VIEWS" />
+</p>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00F7FF,100:0D0D0D&height=2"/>
 
 
 <div align="center">
