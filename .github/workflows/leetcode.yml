@@ -1,8 +1,6 @@
 name: Update LeetCode Stats
 
 on:
-  schedule:
-    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -13,17 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Fetch API Data
+      - name: Fetch Data
         run: |
           curl -s https://alfa-leetcode-api.onrender.com/NaitikVerma > data.json
 
-      - name: Extract Values
+      - name: Extract Data
         run: |
           EASY=$(jq '.easySolved' data.json)
           MEDIUM=$(jq '.mediumSolved' data.json)
@@ -39,21 +37,16 @@ jobs:
           echo "RANK=$RANK" >> $GITHUB_ENV
           echo "CONTRI=$CONTRI" >> $GITHUB_ENV
 
-      - name: Update LeetCode Section
+      - name: Update LeetCode Section ONLY
         run: |
-          START="<!-- LEETCODE-START -->"
-          END="<!-- LEETCODE-END -->"
-
-          awk -v start="$START" -v end="$END" \
-              -v easy="$EASY" \
+          awk -v easy="$EASY" \
               -v medium="$MEDIUM" \
               -v hard="$HARD" \
               -v total="$TOTAL" \
               -v rank="$RANK" \
               -v contri="$CONTRI" '
-          BEGIN {flag=0}
-          $0 ~ start {
-            print start
+          /<!-- LEETCODE-START -->/ {
+            print
             print ""
             print "## <img src=\"https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg\" width=\"25\"/> LeetCode Stats"
             print ""
@@ -65,22 +58,23 @@ jobs:
             print "| 📌 Total | " total " |"
             print "| 🏆 Rank | " rank " |"
             print "| 🔥 Contribution | " contri " |"
-            print ""
-            flag=1
+            skip=1
             next
           }
-          $0 ~ end {
-            print end
-            flag=0
+
+          /<!-- LEETCODE-END -->/ {
+            skip=0
+            print
             next
           }
-          !flag { print }
+
+          !skip { print }
           ' README.md > temp && mv temp README.md
 
-      - name: Commit and Push
+      - name: Commit & Push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add README.md
-          git commit -m "Updated LeetCode stats" || echo "No changes"
+          git commit -m "update leetcode stats" || echo "no change"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
