@@ -44,20 +44,16 @@
 
   <!-- STREAK STATS -->
 
-## <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg" width="25"/> LeetCode Stats
+- name: Update README
+  run: |
+    echo "Updating README..."
 
-<div align="center">
-
-| 📊 Category         | 🚀 Stats |
-| ------------------- | -------- |
-| 🟢 Easy             | 0        |
-| 🟡 Medium           | 0        |
-| 🔴 Hard             | 0        |
-| 📌 **Total Solved** | 0        |
-| 🏆 Ranking          | 0        |
-| 🔥 Contribution     | 0        |
-
-</div>
+    sed -i "s/🟢 Easy | [0-9]*/🟢 Easy | ${EASY}/" README.md
+    sed -i "s/🟡 Medium | [0-9]*/🟡 Medium | ${MEDIUM}/" README.md
+    sed -i "s/🔴 Hard | [0-9]*/🔴 Hard | ${HARD}/" README.md
+    sed -i "s/📌 Total | [0-9]*/📌 Total | ${TOTAL}/" README.md
+    sed -i "s/🏆 Rank | [0-9]*/🏆 Rank | ${RANK}/" README.md
+    sed -i "s/🔥 Contribution | [0-9]*/🔥 Contribution | ${CONTRI}/" README.md
 
 
 
