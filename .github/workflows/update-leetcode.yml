@@ -1,0 +1,42 @@
+name: Update LeetCode Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # Runs daily at midnight UTC
+  workflow_dispatch:        # Allows manual trigger from Actions tab
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Fetch LeetCode stats
+        id: leetcode
+        run: |
+          DATA=$(curl -s "https://alfa-leetcode-api.onrender.com/NaitikVerma/profile")
+          echo "ranking=$(echo $DATA | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['ranking'])")" >> $GITHUB_OUTPUT
+          echo "total=$(echo $DATA | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['totalSolved'])")" >> $GITHUB_OUTPUT
+          echo "easy=$(echo $DATA | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['easySolved'])")" >> $GITHUB_OUTPUT
+          echo "medium=$(echo $DATA | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['mediumSolved'])")" >> $GITHUB_OUTPUT
+          echo "hard=$(echo $DATA | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['hardSolved'])")" >> $GITHUB_OUTPUT
+
+      - name: Update README
+        run: |
+          sed -i "s|<!--RANKING-->.*<!--/RANKING-->|<!--RANKING-->${{ steps.leetcode.outputs.ranking }}<!--/RANKING-->|g" README.md
+          sed -i "s|<!--TOTAL-->.*<!--/TOTAL-->|<!--TOTAL-->${{ steps.leetcode.outputs.total }}<!--/TOTAL-->|g" README.md
+          sed -i "s|<!--EASY-->.*<!--/EASY-->|<!--EASY-->${{ steps.leetcode.outputs.easy }}<!--/EASY-->|g" README.md
+          sed -i "s|<!--MEDIUM-->.*<!--/MEDIUM-->|<!--MEDIUM-->${{ steps.leetcode.outputs.medium }}<!--/MEDIUM-->|g" README.md
+          sed -i "s|<!--HARD-->.*<!--/HARD-->|<!--HARD-->${{ steps.leetcode.outputs.hard }}<!--/HARD-->|g" README.md
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: update LeetCode stats [skip ci]"
+          git push
