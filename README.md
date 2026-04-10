@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=NaitikVerma&style=for-the-badge&color=00f7ff&label=PROFILE+VIEWS" />
+  <img src="https://komarev.com/ghpvc/?username=naitik23verma&style=for-the-badge&color=00f7ff&label=PROFILE+VIEWS" />
 </p>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00F7FF,100:0D0D0D&height=2"/>
