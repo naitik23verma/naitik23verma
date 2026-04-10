@@ -34,19 +34,9 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,mongodb,mysql,git,github,py,cpp,opencv,flask,tensorflow,pytorch,vite,bootstrap,firebase,figma&perline=9" />
 </p>
 
-<!-- LEETCODE-START -->
+## 🧠 LeetCode Stats
 
-## <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg" width="25"/> LeetCode Stats
-
-| 📊 Category | 🚀 Stats |
-|------------|--------|
-| 🟢 Easy | null |
-| 🟡 Medium | null |
-| 🔴 Hard | null |
-| 📌 Total | null |
-| 🏆 Rank | 415117 |
-| 🔥 Contribution | null |
-<!-- LEETCODE-END -->
+![LeetCode Stats](./leetcode-stats.svg)
 
 ---
 # 📊 GitHub Stats:
