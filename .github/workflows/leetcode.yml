@@ -1,4 +1,4 @@
-name: Update LeetCode
+name: Update LeetCode Stats
 
 on:
   schedule:
@@ -13,16 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Fetch Data
+      - name: Fetch API Data
         run: |
           curl -s https://alfa-leetcode-api.onrender.com/NaitikVerma > data.json
 
-      - name: Extract Data
+      - name: Extract Values
         run: |
           EASY=$(jq '.easySolved' data.json)
           MEDIUM=$(jq '.mediumSolved' data.json)
@@ -38,23 +39,48 @@ jobs:
           echo "RANK=$RANK" >> $GITHUB_ENV
           echo "CONTRI=$CONTRI" >> $GITHUB_ENV
 
-      - name: Update README
+      - name: Update LeetCode Section
         run: |
-          echo "## <img src=\"https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg\" width=\"25\"/> LeetCode Stats" > README.md
-          echo "" >> README.md
-          echo "| 📊 Category | 🚀 Stats |" >> README.md
-          echo "|------------|--------|" >> README.md
-          echo "| 🟢 Easy | ${EASY} |" >> README.md
-          echo "| 🟡 Medium | ${MEDIUM} |" >> README.md
-          echo "| 🔴 Hard | ${HARD} |" >> README.md
-          echo "| 📌 Total | ${TOTAL} |" >> README.md
-          echo "| 🏆 Rank | ${RANK} |" >> README.md
-          echo "| 🔥 Contribution | ${CONTRI} |" >> README.md
+          START="<!-- LEETCODE-START -->"
+          END="<!-- LEETCODE-END -->"
 
-      - name: Commit & Push
+          awk -v start="$START" -v end="$END" \
+              -v easy="$EASY" \
+              -v medium="$MEDIUM" \
+              -v hard="$HARD" \
+              -v total="$TOTAL" \
+              -v rank="$RANK" \
+              -v contri="$CONTRI" '
+          BEGIN {flag=0}
+          $0 ~ start {
+            print start
+            print ""
+            print "## <img src=\"https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg\" width=\"25\"/> LeetCode Stats"
+            print ""
+            print "| 📊 Category | 🚀 Stats |"
+            print "|------------|--------|"
+            print "| 🟢 Easy | " easy " |"
+            print "| 🟡 Medium | " medium " |"
+            print "| 🔴 Hard | " hard " |"
+            print "| 📌 Total | " total " |"
+            print "| 🏆 Rank | " rank " |"
+            print "| 🔥 Contribution | " contri " |"
+            print ""
+            flag=1
+            next
+          }
+          $0 ~ end {
+            print end
+            flag=0
+            next
+          }
+          !flag { print }
+          ' README.md > temp && mv temp README.md
+
+      - name: Commit and Push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add README.md
-          git commit -m "update stats" || echo "no change"
+          git commit -m "Updated LeetCode stats" || echo "No changes"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
