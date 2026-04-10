@@ -33,18 +33,16 @@ jobs:
 
       - name: Update README
         run: |
-          cat <<EOF > README.md
-## <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg" width="25"/> LeetCode Stats
-
-| 📊 Category | 🚀 Stats |
-|------------|--------|
-| 🟢 Easy | ${EASY} |
-| 🟡 Medium | ${MEDIUM} |
-| 🔴 Hard | ${HARD} |
-| 📌 Total | ${TOTAL} |
-| 🏆 Rank | ${RANK} |
-| 🔥 Contribution | ${CONTRI} |
-EOF
+          echo "## <img src=\"https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg\" width=\"25\"/> LeetCode Stats" > README.md
+          echo "" >> README.md
+          echo "| 📊 Category | 🚀 Stats |" >> README.md
+          echo "|------------|--------|" >> README.md
+          echo "| 🟢 Easy | ${EASY} |" >> README.md
+          echo "| 🟡 Medium | ${MEDIUM} |" >> README.md
+          echo "| 🔴 Hard | ${HARD} |" >> README.md
+          echo "| 📌 Total | ${TOTAL} |" >> README.md
+          echo "| 🏆 Rank | ${RANK} |" >> README.md
+          echo "| 🔥 Contribution | ${CONTRI} |" >> README.md
 
       - name: Commit & Push
         run: |
