@@ -1,0 +1,43 @@
+name: Update LeetCode
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Fetch Data
+        run: |
+          curl -s https://alfa-leetcode-api.onrender.com/NaitikVerma > data.json
+
+      - name: Extract
+        run: |
+          echo "EASY=$(jq '.easySolved' data.json)" >> $GITHUB_ENV
+          echo "MEDIUM=$(jq '.mediumSolved' data.json)" >> $GITHUB_ENV
+          echo "HARD=$(jq '.hardSolved' data.json)" >> $GITHUB_ENV
+          echo "TOTAL=$(jq '.totalSolved' data.json)" >> $GITHUB_ENV
+          echo "RANK=$(jq '.ranking' data.json)" >> $GITHUB_ENV
+          echo "CONTRI=$(jq '.contributionPoint' data.json)" >> $GITHUB_ENV
+
+      - name: Update README
+        run: |
+          sed -i "s/🟢 Easy | .*/🟢 Easy | ${EASY} |/" README.md
+          sed -i "s/🟡 Medium | .*/🟡 Medium | ${MEDIUM} |/" README.md
+          sed -i "s/🔴 Hard | .*/🔴 Hard | ${HARD} |/" README.md
+          sed -i "s/📌 Total | .*/📌 Total | ${TOTAL} |/" README.md
+          sed -i "s/🏆 Rank | .*/🏆 Rank | ${RANK} |/" README.md
+          sed -i "s/🔥 Contribution | .*/🔥 Contribution | ${CONTRI} |/" README.md
+
+      - name: Push
+        run: |
+          git config user.name "bot"
+          git config user.email "bot@github.com"
+          git add README.md
+          git commit -m "update stats" || echo "no change"
+          git push
