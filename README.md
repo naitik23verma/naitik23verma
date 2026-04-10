@@ -34,9 +34,34 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,mongodb,mysql,git,github,py,cpp,opencv,flask,tensorflow,pytorch,vite,bootstrap,firebase,figma&perline=9" />
 </p>
 
-## 🧠 LeetCode Stats
+## 🧩 LeetCode Stats
 
-![LeetCode Stats](./leetcode-stats.svg)
+<div align="center">
+
+<!-- LeetCode Stats Card -->
+<img src="https://leetcard.jacoblin.cool/NaitikVerma?theme=dark&font=Baloo_2&ext=heatmap" alt="LeetCode Stats" />
+
+<br/><br/>
+
+<!-- Dynamic stats fetched via workflow -->
+<table>
+  <tr>
+    <td align="center"><b>🏆 Ranking</b></td>
+    <td align="center"><b>✅ Total Solved</b></td>
+    <td align="center"><b>🟢 Easy</b></td>
+    <td align="center"><b>🟡 Medium</b></td>
+    <td align="center"><b>🔴 Hard</b></td>
+  </tr>
+  <tr>
+    <td align="center"><!--RANKING-->415117<!--/RANKING--></td>
+    <td align="center"><!--TOTAL-->317<!--/TOTAL--></td>
+    <td align="center"><!--EASY-->119<!--/EASY--></td>
+    <td align="center"><!--MEDIUM-->166<!--/MEDIUM--></td>
+    <td align="center"><!--HARD-->32<!--/HARD--></td>
+  </tr>
+</table>
+
+</div>
 
 ---
 # 📊 GitHub Stats:
