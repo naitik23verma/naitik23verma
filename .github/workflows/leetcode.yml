@@ -1,3 +1,5 @@
+permissions:
+  contents: write
 name: Update LeetCode
 
 on:
@@ -40,4 +42,4 @@ jobs:
           git config user.email "bot@github.com"
           git add README.md
           git commit -m "update stats" || echo "no change"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
