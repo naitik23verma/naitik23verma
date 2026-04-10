@@ -15,7 +15,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
 
       - name: Fetch Data
         run: |
@@ -23,12 +25,12 @@ jobs:
 
       - name: Extract Data
         run: |
-          EASY=$(jq '.easySolved' data.json)
-          MEDIUM=$(jq '.mediumSolved' data.json)
-          HARD=$(jq '.hardSolved' data.json)
-          TOTAL=$(jq '.totalSolved' data.json)
-          RANK=$(jq '.ranking' data.json)
-          CONTRI=$(jq '.contributionPoint' data.json)
+          EASY=$(jq -r '.easySolved' data.json)
+          MEDIUM=$(jq -r '.mediumSolved' data.json)
+          HARD=$(jq -r '.hardSolved' data.json)
+          TOTAL=$(jq -r '.totalSolved' data.json)
+          RANK=$(jq -r '.ranking' data.json)
+          CONTRI=$(jq -r '.contributionPoint' data.json)
 
           echo "EASY=$EASY" >> $GITHUB_ENV
           echo "MEDIUM=$MEDIUM" >> $GITHUB_ENV
@@ -37,44 +39,26 @@ jobs:
           echo "RANK=$RANK" >> $GITHUB_ENV
           echo "CONTRI=$CONTRI" >> $GITHUB_ENV
 
-      - name: Update LeetCode Section ONLY
+      - name: Generate SVG
         run: |
-          awk -v easy="$EASY" \
-              -v medium="$MEDIUM" \
-              -v hard="$HARD" \
-              -v total="$TOTAL" \
-              -v rank="$RANK" \
-              -v contri="$CONTRI" '
-          /<!-- LEETCODE-START -->/ {
-            print
-            print ""
-            print "## <img src=\"https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg\" width=\"25\"/> LeetCode Stats"
-            print ""
-            print "| 📊 Category | 🚀 Stats |"
-            print "|------------|--------|"
-            print "| 🟢 Easy | " easy " |"
-            print "| 🟡 Medium | " medium " |"
-            print "| 🔴 Hard | " hard " |"
-            print "| 📌 Total | " total " |"
-            print "| 🏆 Rank | " rank " |"
-            print "| 🔥 Contribution | " contri " |"
-            skip=1
-            next
-          }
+          cat <<EOF > leetcode-stats.svg
+          <svg width="420" height="220" xmlns="http://www.w3.org/2000/svg">
+            <style>
+              .title { font: bold 18px sans-serif; fill: #facc15; }
+              .text { font: 14px sans-serif; fill: #ffffff; }
+            </style>
 
-          /<!-- LEETCODE-END -->/ {
-            skip=0
-            print
-            next
-          }
+            <rect width="100%" height="100%" fill="#0f172a" rx="10"/>
 
-          !skip { print }
-          ' README.md > temp && mv temp README.md
+            <text x="20" y="30" class="title">LeetCode Stats</text>
+            <text x="20" y="60" class="text">Easy: ${EASY}</text>
+            <text x="20" y="80" class="text">Medium: ${MEDIUM}</text>
+            <text x="20" y="100"
 
       - name: Commit & Push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add README.md
+          git add leetcode-stats.svg
           git commit -m "update leetcode stats" || echo "no change"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
