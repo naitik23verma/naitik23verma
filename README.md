@@ -13,8 +13,29 @@
 </p>
 
 
-# 💫 About Me:
-🔭 I’m currently working on<br><br>Building full-stack Next.js + React web applications with modern UI/UX.<br><br>Enhancing my C++ DSA skills with regular LeetCode practice (200+ questions).<br><br>Developing projects in Machine Learning, Computer Vision, and RAG-based AI apps.<br><br>Improving real-time apps using WebSockets, Express, and Node.js.<br><br>🤝 I’m looking to collaborate on<br><br>Full-stack projects using Next.js, React, TypeScript, Node.js, WebSockets.<br><br>AI/ML projects involving Computer Vision, Deep Learning, and RAG pipelines.<br><br>Open-source tools related to backend systems, automation, or developer utilities.<br><br>🧠 I’m looking for help with<br><br>Scaling real-time systems and optimizing backend architecture.<br><br>Improving accuracy and performance in ML/CV models.<br><br>Advancing my understanding of distributed systems.<br><br>🌱 I’m currently learning<br><br>Advanced Machine Learning, Neural Networks, and LLM-based Retrieval systems (RAG).<br><br>Backend performance optimization with Node.js, API caching, and database patterns.<br><br>Competitive programming concepts in C++ (graphs, DP, trees, tries).<br><br>💬 Ask me about<br><br>Next.js, React, JavaScript, WebSockets, REST APIs, CSS/SCSS.<br><br>Python, ML, Computer Vision, OpenCV, TensorFlow/PyTorch basics.<br><br>C++ for DSA, problem-solving strategies, and debugging.<br><br>Building end-to-end full-stack apps, deployment, and optimization.<br><br>⚡ Fun fact<br><br>I love mixing skills — sometimes I build AI with Python, sometimes a full-stack app with Next.js… and sometimes I fix bugs just by staring at my screen. 😄
+<div align="center">
+
+## 💫 About Me
+
+🔭 **Working On**
+Building full-stack Next.js/React apps, sharpening C++ DSA on LeetCode, and developing ML, Computer Vision & RAG-based AI projects.
+
+🤝 **Looking to Collaborate On**
+Full-stack (Next.js, React, TypeScript, Node.js, WebSockets) and AI/ML projects — Computer Vision, Deep Learning, RAG pipelines, and open-source dev tools.
+
+🧠 **Looking for Help With**
+Scaling real-time systems, optimizing backend architecture, improving ML/CV model performance, and understanding distributed systems.
+
+🌱 **Currently Learning**
+Advanced ML, Neural Networks, LLM-based RAG systems, Node.js performance optimization, and competitive programming in C++ (graphs, DP, trees, tries).
+
+💬 **Ask Me About**
+Next.js · React · WebSockets · REST APIs · Python · OpenCV · TensorFlow · C++ DSA · Full-stack deployment & optimization.
+
+⚡ **Fun Fact**
+I mix AI with Python, full-stack with Next.js — and occasionally fix bugs just by staring at the screen. 😄
+
+</div>
 
 ---
 
