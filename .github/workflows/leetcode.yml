@@ -1,5 +1,3 @@
-permissions:
-  contents: write
 name: Update LeetCode
 
 on:
@@ -33,7 +31,7 @@ jobs:
           echo "RANK=$(jq '.ranking' data.json)" >> $GITHUB_ENV
           echo "CONTRI=$(jq '.contributionPoint' data.json)" >> $GITHUB_ENV
 
-      - name: Update README (FINAL)
+      - name: Update README
         run: |
           cat <<EOF > README.md
 ## <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg" width="25"/> LeetCode Stats
