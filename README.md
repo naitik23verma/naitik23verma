@@ -17,7 +17,7 @@
   &nbsp;
   <a href="naitikv2311@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   &nbsp;
-  <a href="www.naitikverma.me"><img src="https://img.shields.io/badge/Portfolio-00F7FF?style=for-the-badge&logo=vercel&logoColor=black"/></a>
+  <a href="[www.naitikverma.me](https://www.naitikverma.me/)"><img src="https://img.shields.io/badge/Portfolio-00F7FF?style=for-the-badge&logo=vercel&logoColor=black"/></a>
 </p>
 
 <p align="center">
