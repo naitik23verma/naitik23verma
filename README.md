@@ -88,11 +88,11 @@ I mix AI with Python, full-stack with Next.js — and occasionally fix bugs just
     <td align="center"><b>🔴 Hard</b></td>
   </tr>
   <tr>
-    <td align="center"><!--RANKING-->402119<!--/RANKING--></td>
-    <td align="center"><!--TOTAL-->323<!--/TOTAL--></td>
-    <td align="center"><!--EASY-->121<!--/EASY--></td>
-    <td align="center"><!--MEDIUM-->170<!--/MEDIUM--></td>
-    <td align="center"><!--HARD-->32<!--/HARD--></td>
+    <td align="center"><!--RANKING-->402376<!--/RANKING--></td>
+    <td align="center"><!--TOTAL-->328<!--/TOTAL--></td>
+    <td align="center"><!--EASY-->123<!--/EASY--></td>
+    <td align="center"><!--MEDIUM-->172<!--/MEDIUM--></td>
+    <td align="center"><!--HARD-->33<!--/HARD--></td>
   </tr>
 </table>
 
